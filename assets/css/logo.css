@@ -1,0 +1,53 @@
+@keyframes rotating { /* bah */
+  from {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotating { /* Safari and Chrome */ 
+  from {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: #98b011;
+}
+
+.logo {
+  position: absolute; top: 50%; left: 50%;
+  margin: -69px;
+  width: 138px;
+  height: 138px;
+  background: url('../img/logo-mark-138.png') 0 0 no-repeat;
+}
+
+.rotating {
+  -webkit-animation: rotating 3s linear infinite;
+  -moz-animation: rotating 3s linear infinite;
+  -ms-animation: rotating 3s linear infinite;
+  -o-animation: rotating 3s linear infinite;
+  animation: rotating 3s linear infinite;
+}
